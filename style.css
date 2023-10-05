@@ -1,0 +1,101 @@
+body {
+  background: url("./assets/img/bg.gif");
+  background-size : cover;
+  z-index: -1;
+}
+.navbar_css {
+  backdrop-filter: blur(200px) ;
+}
+.nav_title p {
+  color: white;
+}
+.nav_title p:hover {
+  color: rgba(255, 255, 255, 0.753);
+}
+.nav-link.show {
+  color: rgba(255, 255, 255, 0.445) !important;
+}
+.title_nav_section {
+  color: black !important;
+}
+.nav_title a{
+  color: black !important;
+}
+
+.actu_nav {
+    height: 50px;
+    width: 50px;
+}
+.img_size {
+    height: 150px;
+    width: 250px;
+    border-radius: 25px;
+    box-shadow: 3px 3px 3px blue;
+}
+.img_arct {
+  border-radius: 35px;
+  box-shadow: 3px 3px 3px blue;
+}
+
+.gallery {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "photo1 . photo3 ."
+      ". photo2 . photo4"; 
+  }
+  .photo1 { grid-area: photo1; }
+  .photo2 { grid-area: photo2; }
+  .photo3 { grid-area: photo3; }
+  .photo4 { grid-area: photo4; }
+
+  .lich {
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 0.7fr 1.3fr; 
+    gap: 0px 0px; 
+  }
+  .title { grid-area: 1 / 1 / 2 / 3; }
+  .img_lich {grid-area: 2 / 1 / 3 / 3; }
+  .link {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      ". . ."
+      ". title_arct ."
+      ". link_wow ."; 
+    grid-area: 1 / 1 / 2 / 3; 
+  }
+  .title_arct { grid-area: title_arct; }
+  .link_wow { grid-area: link_wow; }
+
+  .conteneur2 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    
+    .div1 { grid-area: 1 / 3 / 2 / 4; }
+    .div2 { grid-area: 1 / 2 / 2 / 3; }
+    .rs li{
+        list-style-type:none
+    }
+  
+    .rs li a {
+      font-style: italic;
+      border-radius: 35px;
+      font-size: medium;
+    }
+    .btn {
+      
+      text-shadow: 2px 2px 2px blue;
+    }
+    h2 {
+      text-shadow: 2px 2px 2px blue;
+    }
